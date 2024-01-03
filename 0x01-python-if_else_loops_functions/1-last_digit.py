@@ -8,4 +8,4 @@ if number > 5:
 elif number == 0:
     print(f'Last digit of {number} is {a} and is 0')
 else:
-    print(f'Last digit of {number} is -{a} and is less than 6 and not 0')
+    print(f'Last digit of {number} is -{a2-print_alphabet.py} and is less than 6 and not 0')
