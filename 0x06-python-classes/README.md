@@ -1,2 +1,1 @@
-#0x06-python-classes
-hello
+# 0x06-python-classes
