@@ -5,12 +5,10 @@ class Square:
     def __init__(self, size=0):
         # Private instance attribute
         self.__size = None
-        self.set_size(size)
+        self.size(size)
     def size(self):
         """Getter method for the 'size' attribute."""
         return self.__size
-
-    @size.setter
     def size(self, value):
         """Setter method for the 'size' attribute."""
         if not isinstance(value, int):
