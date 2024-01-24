@@ -5,10 +5,12 @@ class Square:
     def __init__(self, size=0):
         # Private instance attribute
         self.__size = None
-        self.size(size)
+        self.size = size
+    @property
     def size(self):
         """Getter method for the 'size' attribute."""
         return self.__size
+    @size.setter
     def size(self, value):
         """Setter method for the 'size' attribute."""
         if not isinstance(value, int):
@@ -21,3 +23,4 @@ class Square:
     def area(self):
         """Calculate and return the area of the square."""
         return self.__size ** 2
+
