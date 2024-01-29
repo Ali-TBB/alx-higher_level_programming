@@ -1,5 +1,18 @@
 #!/usr/bin/python3
+"""
+0-add_integer Module
 
+This module provides the 'add_integer' function for Adds two numbers and returns the result.
+Usage:
+    from 0-add_integer import add_integer
+    add_integer(a, b)
+
+Author:
+    [ali debbache]
+
+Date:
+    [2024/01/29]
+"""
 def add_integer(a, b=98):
     """
     Adds two numbers and returns the result.
