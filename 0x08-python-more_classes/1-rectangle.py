@@ -2,7 +2,7 @@
 """
 Rectangle Class
 
-This is empty class.
+This is defined of rectangle class.
 
 Author:
 [ali debbache]
@@ -20,11 +20,11 @@ class Rectangle:
         - width (int): The width of the rectangle.
         - height (int): The height of the rectangle.
         """
-    self.__width = width
-    self.__height = height
+        self.__width = width
+        self.__height = height
     @property
     def width(self):
-        return width
+        return self.__width
     @width.setter
     def width(self, value):
         if not isinstant(value, int):
@@ -34,7 +34,7 @@ class Rectangle:
         self.__width = value
     @property
     def height(self):
-        return height
+        return self.__height
     @height.setter
     def height(self, value):
         if not isinstant(value, int):
