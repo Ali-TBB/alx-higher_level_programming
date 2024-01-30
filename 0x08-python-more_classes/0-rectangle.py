@@ -11,7 +11,5 @@ Date:
 [2024/01/29]
 """
 class Rectangle:
-    """
-    the Rectangle class.
-    """
+    """the Rectangle class."""
     pass
