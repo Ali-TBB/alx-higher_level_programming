@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 """
 Rectangle Class
-
 This is defined of rectangle class.
-
 Author:
 [ali debbache]
-
 Date:
 [2024/01/30]
 """
@@ -17,18 +14,17 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
         Initializes a new instance of the Rectangle class.
-
         Parameters:
         - width (int): The width of the rectangle.
         - height (int): The height of the rectangle.
         """
         self.width = width
         self.height = height
+
     @property
     def width(self):
         """getter for the private instance attribute width"""
         return self.__width
-
 
     @width.setter
     def width(self, value):
@@ -39,12 +35,10 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-
     @property
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
-
 
     @height.setter
     def height(self, value):
