@@ -14,6 +14,8 @@ Author:
 Date:
     [2024/01/29]
 """
+
+
 def matrix_divided(matrix, div):
     """
     Divides all elements of a matrix by a given divisor.
@@ -36,14 +38,16 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-
-    if not all(isinstance(row, list) for row in matrix) or not all(isinstance(element, (int, float)) for row in matrix for element in row):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    err = "matrix must be a matrix (list of lists) of integers/floats"
+    if not all(isinstance(row, list) for row in matrix):
+        raise TypeError(err)
+    if not all(isinstance(element, (int, float)
+                          ) for row in matrix for element in row):
+        raise TypeError(err)
 
     row_size = len(matrix[0])
     if not all(row_size == len(row) for row in matrix):
         raise TypeError("Each row of the matrix must have the same size")
-
 
     new_matrix = []
 
@@ -54,4 +58,3 @@ def matrix_divided(matrix, div):
             new_row.append(round(i / div, 2))
         new_matrix.append(new_row)
     return new_matrix
-
