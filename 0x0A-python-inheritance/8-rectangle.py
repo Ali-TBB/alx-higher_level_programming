@@ -8,6 +8,7 @@ Date:
 [2024/02/05]
 """
 
+
 class Rectangle(BaseGeometry):
     """ Rectangle class"""
     def __init__(self, width, height):
