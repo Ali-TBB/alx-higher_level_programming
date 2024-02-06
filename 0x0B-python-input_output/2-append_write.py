@@ -14,7 +14,7 @@ def append_write(filename="", text=""):
     appends a string at the end of a text file.
 
     Parameters:
-    - filename (str): The path to the file to be read.
+    - filename (str): The path to the file to be write.
     - text (str): string will be added on the end of text file.
     Returns:
     - int: The number of characters added
