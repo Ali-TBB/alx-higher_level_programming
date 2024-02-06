@@ -14,7 +14,7 @@ import json
 
 def save_to_json_file(my_obj, filename):
     """
-    Returns an object (Python data structure) represented by a JSON string:.
+    Writes an Object to a text file, using a JSON representation.
 
     Parameters:
     - filename (str): The path to the file to be write.
