@@ -17,6 +17,7 @@ def class_to_json(obj):
     - obj (object): The object to convert.
 
     Returns:
-    - dict: A dictionary representation of the object's attributes and their values.
+    - dict: A dictionary representation of the object's
+    attributes and their values.
     """
     return vars(obj)
