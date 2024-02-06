@@ -9,17 +9,17 @@ Date:
 """
 
 from sys import argv
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
+load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 file_name = "add_item.json"
 
 try:
-    existing_items = load_from_json_file(file_name)
+    json_list = load_from_json_file(file_name)
 except FileNotFoundError:
-    existing_items = []
+    json_list = []
 
 for arg in argv[1:]:
-    existing_items.append(arg)
+    json_list.append(arg)
 
-save_to_json_file(existing_items, file_name)
+save_to_json_file(json_list, file_name)
