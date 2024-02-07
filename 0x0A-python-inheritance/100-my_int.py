@@ -10,4 +10,5 @@ Date:
 
 
 class MyInt(int):
+    """ Myint class """
     pass
