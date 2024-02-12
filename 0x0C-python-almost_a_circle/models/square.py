@@ -17,9 +17,11 @@ class Square(Rectangle):
     - size (int): The size of the square.
 
     Methods:
-    - __init__(self, size, x=0, y=0, id=None): Initializes a new square with the specified size and optional position and ID.
+    - __init__(self, size, x=0, y=0, id=None): Initializes a new square with
+        the specified size and optional position and ID.
     - __str__(self): Returns a string representation of the square.
-    - update(self, *args, **kwargs): Updates the attributes of the square with positional arguments or keyword arguments.
+    - update(self, *args, **kwargs): Updates the attributes of
+        the square with positional arguments or keyword arguments.
     - to_dictionary(self): Returns a dictionary representation of the square.
     """
     def __init__(self, size, x=0, y=0, id=None):
