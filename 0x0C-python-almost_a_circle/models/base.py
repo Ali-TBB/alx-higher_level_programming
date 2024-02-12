@@ -9,6 +9,7 @@ Date:
 import json
 import os
 
+
 class Base:
     """
     Base class for creating objects with unique identifiers.
