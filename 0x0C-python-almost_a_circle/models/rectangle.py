@@ -98,9 +98,27 @@ class Rectangle(Base):
                 raise ValueError("{} must be >= 0".format(attribute))
 
     def area(self):
+        """
+        Calculate the area of the geometry object.
+
+        Returns:
+        - float: The area of the geometry object.
+
+        Note:
+        This method should be implemented in subclasses.
+        """
         return self.width * self.height
 
     def display(self):
+        """
+        Display information about the geometry object.
+
+        Returns:
+        - str: A string containing information about the geometry object.
+
+        Note:
+        This method should be implemented in subclasses.
+        """
         for i in range(self.height):
             for j in range(self.width):
                 print("#", end="")
