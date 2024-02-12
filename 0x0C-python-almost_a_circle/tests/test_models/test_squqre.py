@@ -6,7 +6,10 @@ Author:
 Date:
 [2024/02/12]
 """
+import os
 import unittest
+from models.base import Base
+from models.rectangle import Rectangle
 from models.square import Square
 
 
