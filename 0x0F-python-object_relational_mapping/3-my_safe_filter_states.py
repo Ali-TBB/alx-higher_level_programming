@@ -34,9 +34,10 @@ def search_states_by_name(username, password, database, state_name):
     # Create a cursor object
     cursor = db.cursor()
 
-    query = """SELECT * FROM states WHERE name = '{}'
-             ORDER BY id ASC""".format(state_name)
-    cursor.execute(query)
+    query = """SELECT * FROM states
+          WHERE name = %s
+          ORDER BY id ASC"""
+    cursor.execute(query, (state_name,))
 
     # Fetch all the rows
     states = cursor.fetchall()
