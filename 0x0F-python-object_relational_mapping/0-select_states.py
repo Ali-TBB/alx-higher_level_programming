@@ -4,8 +4,11 @@ Script to list all states from a MySQL database.
 Usage:
     python script.py <username> <password> <database>
 """
+
+
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
     username = sys.argv[1]
