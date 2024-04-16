@@ -1,10 +1,25 @@
 #!/usr/bin/python3
-
+"""
+Script to list all states from a MySQL database.
+Usage:
+    python script.py <username> <password> <database>
+"""
 import MySQLdb
 import sys
 
 
 def list_states(user, passwd, db):
+    """
+    Function to list all states from the database.
+
+    Args:
+        username (str): MySQL username.
+        password (str): MySQL password.
+        database (str): MySQL database name.
+
+    Returns:
+        None
+    """
     # Connect to MySQL server
     db = MySQLdb.connect(host="localhost",
                          user=user, passwd=passwd, db=db, port=3306)
