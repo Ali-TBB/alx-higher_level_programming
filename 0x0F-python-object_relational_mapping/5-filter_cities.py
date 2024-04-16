@@ -32,7 +32,7 @@ def list_cities(username, password, database, state_name):
     # Create a cursor object
     cursor = db.cursor()
 
-    sql ="""SELECT cities.name
+    sql = """SELECT cities.name
           FROM states
           INNER JOIN cities ON states.id = cities.state_id
           WHERE states.name = %s
@@ -40,11 +40,10 @@ def list_cities(username, password, database, state_name):
 
     cursor.execute(sql, (state_name,))
     # Fetch all the rows
-    cities = cursor.fetchall()
+    data = cursor.fetchall()
 
     # Display the results
-    for city in cities:
-        print(city)
+    print(", ".join([city[0] for city in data]))
 
     # Close cursor and database connection
     cursor.close()
