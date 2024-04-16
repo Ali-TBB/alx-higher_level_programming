@@ -37,7 +37,7 @@ def list_cities(username, password, database):
           WHERE c.state_id = s.id
           ORDER BY c.id ASC"""
 
-    cursor.execut(sql)
+    cursor.execute(sql)
     # Fetch all the rows
     cities = cursor.fetchall()
 
