@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script to list all states from a MySQL database with upper N.
+Script to search for states by name in the database.
 Usage:
     python script.py <username> <password> <database>
 """
