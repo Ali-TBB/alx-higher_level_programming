@@ -32,8 +32,12 @@ def list_cities(username, password, database):
     # Create a cursor object
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM cities ORDER BY id ASC")
+    sql = """SELECT c.id, c.name, s.name
+          FROM states s, cities c
+          WHERE c.state_id = s.id
+          ORDER BY c.id ASC"""
 
+    cursor.execut(sql)
     # Fetch all the rows
     cities = cursor.fetchall()
 
