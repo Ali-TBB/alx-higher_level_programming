@@ -13,6 +13,7 @@ def main(url):
     """
     response = requests.get(url)
     if response.status_code >= 400:
+        print(response.text)
         print(" Error code: {}".format(response.status_code))
     else:
         print(response.text)
