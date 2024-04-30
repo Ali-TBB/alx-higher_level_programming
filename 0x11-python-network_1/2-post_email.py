@@ -13,8 +13,7 @@ def send_email(url, email):
         url (str): The URL to fetch.
         email (str): The email to send.
     """
-    data = urllib.parse.urlencode({"email": email}).encode("ascii")
-    print(data)
+    data = urllib.parse.urlencode(email).encode("ascii")
     request = urllib.request.Request(url, data)
     with urllib.request.urlopen(request) as response:
         print(request.read().decode('utf-8'))
@@ -22,5 +21,5 @@ def send_email(url, email):
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    email = sys.argv[2]
+    email = {"email": sys.argv[2]}
     send_email(url, email)
