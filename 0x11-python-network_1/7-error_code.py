@@ -13,7 +13,7 @@ def main(url):
     """
     try:
         response = requests.get(url)
-        print(requests.text)
+        print(response.text)
     except requests.exceptions.HTTPError as e:
         print("Error code:", e.response.status_code)
 
